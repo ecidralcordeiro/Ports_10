@@ -1,0 +1,57 @@
+.cadastro {
+    position: relative;
+    padding-top: 150px;
+    padding-left: 45%;
+    margin: 0%;
+}
+
+.preferencia {
+    padding-top: 50px;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.conteudo-cadastro {
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    border: 1px solid rgba(82, 82, 219, 0.794);
+    border-radius: 20px;
+}
+
+#cadastro {
+    border: 1px solid rgba(82, 82, 219, 0.794);
+    background-color: rgba(82, 82, 219, 0.794);
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#cadastro:focus {
+    background-color: rgba(64, 64, 112, 0.794);
+    border: 1px solid black;
+}
+
+#cadastro:hover {
+    cursor: pointer;
+}
+
+#flogin {
+    padding-right: 130px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#mostra {
+    display: none;
+}
+
+#btcadastro {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 1rem;
+}
