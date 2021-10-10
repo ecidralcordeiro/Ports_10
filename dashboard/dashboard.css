@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+}
+.Header{
+    position: fixed;
+    height: 125px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.Esquerdo{
+    position: fixed;
+    top: 158px;
+    height: 400px;
+    width: 25%;
+    background-color: blue;
+
+}
+
+.Direito{
+    position: fixed;
+    top: 158px;
+    right: 0px;
+    height: 400px;
+    width: 25%;
+    background-color: blue;
+}
+
+.fother{
+    position: fixed;
+    bottom: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: red;
+}
+
+.body{
+    position: relative;
+    top: 130px;
+    left: 25.75%;
+    width: 49%;
+    background-color: burlywood;
+}
+
+.logo{
+    position: fixed;
+    right: 0%;
+}
