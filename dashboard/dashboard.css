@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 8vh;
     flex-grow: 1;
     background-color: darkgrey;
 }
@@ -58,11 +58,37 @@ footer {
     z-index: 2;
 }
 .logo {
+    height: 12.8vh;
     position: fixed;
     right: 0px;
     bottom: 0px;
 } 
+.loginAndSingin{
+    position: fixed;
+    right: 20px;
+}
+.login, .singIn{
+    top: 20vh;
+    border: none;
+    padding: 15px 42px;
+    border-radius: 15px;
+    color: magenta;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 8px 10px;
+    cursor: pointer;
+}
 
+.search{
+    position: absolute;
+    left: 32vh;
+    top: 1vh;
+    width: 12vh;
+    height: 20vh;
+
+}
 ::-webkit-scrollbar {
     height: 8px;
     width: 7px;
