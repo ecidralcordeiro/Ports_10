@@ -30,9 +30,10 @@ header {
     position: fixed;
     top: 158px;
     right: 0px;
-    height: 400px;
-    width: 25%;
-    background-color: darkgray;
+    height: 600px;
+    width: 21%;
+    margin-right: 75px;
+    background-color: rgb(255, 255, 255);
 } 
 
 main {
@@ -46,18 +47,160 @@ main {
     overflow-y: scroll;
 
     align-self: center;
-    width: 60%;
+    width: 40%;
 
     background-color: bisque;
     z-index: 1;
 }
+
+.direito-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px 0;
+    position: relative;
+}
+
+.direito-title {
+    padding: 0;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+    margin-right: 180px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.g-icon{
+    height: 25px;
+}
+
+.icon {
+    margin-left: 20px;
+    background-color: transparent;
+    border: 6px transparent solid;
+    border-radius: 40%;
+}
+
+.icon:hover {
+    transition: ease-in 0.5s;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.swiper-pg {
+    margin-left: 158px;
+}
+
+.swiper-ponto {
+    border-color: rgb(189, 189, 189);
+    margin: 0 3px;
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 500px;
+}
+
+.swiper-ponto:hover {
+    background-color: rgb(117, 115, 115);
+    cursor: pointer;
+}
+
+.recomendados {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    z-index: 0;
+}
+
+.perfil {
+    width: 350px;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.conteudo {
+    width: 400px;
+    height: 500px;
+}
+
+.fundo {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.info {
+    width: 150;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.info:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    border: 5px white solid;
+}
+
+.pfundo {
+    width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.pessoa {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(2, 2, 2, 0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.nome {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.arroba {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+} 
+
 footer {
     height: 10vh;
     flex-grow: 1;
     background-color: darkgray;
     z-index: 2;
 }
-.logo {
+.logop10 {
     height: 12.8vh;
     position: fixed;
     right: 0px;
