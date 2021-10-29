@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 </head>
-<body onload="desabilita()">
+<body>
     <div class="cadastro">
-        <div class="conteudo-cadastro">
+        <div id="conteudocadastro" class="conteudo-cadastro">
             <p id="flogin">Cadastro</p>
-            <input id="btcadastro" type="email" placeholder="E-mail">
+            <input onmouseleave=verifica() class="btcadastro" id="email" type="email" placeholder="E-mail">
             <br>
             <br>
-            <input id="btcadastro" type="password" placeholder="Senha">
+            <input class="btcadastro" id="senha1" type="password" placeholder="Senha">
             <br>
             <br>
-            <input oninput="mostra()" id="btcadastro" type="password" placeholder="Repita a Senha">
+            <input onmouseleave=verifica() id="senha2" class="btcadastro" type="password" placeholder="Repita a Senha">
             <br>
             <br>
-            <button type="button" id="cadastro"> Cadastre-se </button>
+            <button onclick="esconde();" onmouseenter="verifica()" type="button" id="cadastro"> Cadastre-se </button>
     </div>
-    <div id="mostra">
+    <div class="divpref" id="pref" onmouseenter="esconde2()">
         <div class="preferencia">
             <p id="flogin">Preferência<p>
-            <button onclick="habilita()" type="button" id="cadastro"> Palestrante </button>
+            <button type="button" id="cadastro2" onclick="interesses();"> Palestrante </button>
             <br>
             <br>
-            <button onclick="habilita()" type="button" id="cadastro"> Usuário Comum </button>
+            <button type="button" id="cadastro2" onclick="interesses();"> Usuário Comum </button>
+        </div>
     </div>
-    </div>
-
+    
 <script src="cadastro.js"></script>
 </body>
 </html>
