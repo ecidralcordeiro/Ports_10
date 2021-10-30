@@ -10,12 +10,18 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     max-height: 100vh;
+    font-family: sans-serif;
+    overflow-y: scroll;
 }
 
 header {
     height: 8vh;
     flex-grow: 1;
-    background-color: darkgrey;
+    background-color: white;
+    border: 1px grey solid;
+    border-top: none;
+    position: fixed;
+    width: 100%;
 }
 
 .esquerdo {
@@ -23,7 +29,8 @@ header {
     top: 158px;
     height: 400px;
     width: 25%;
-    background-color: darkgray;
+    background-color: white;
+    border: 1px grey solid;
 }
 
 .direito {
@@ -37,19 +44,18 @@ header {
 } 
 
 main {
-    height: 90vh;
+    height: 100%;
     flex-grow: 2;
-    margin: 8px 0px;
-    border: 2px solid #000;
-    border-radius: 6px;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
     padding: 16px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8);
-    overflow-y: scroll;
+    padding-top: 0px;
 
     align-self: center;
     width: 40%;
 
-    background-color: bisque;
+    background-color: white;
     z-index: 1;
 }
 
@@ -67,6 +73,11 @@ main {
     margin-right: 180px;
     font-size: 17px;
     font-family: sans-serif;
+}
+
+.divesquerda {
+    position: fixed;
+    margin-top: 79px;
 }
 
 .g-icon{
@@ -193,6 +204,73 @@ main {
     color: white;
     padding-right: 30px;
 } 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+#imgmenu {
+    width: 50px;
+    cursor: pointer;
+}
+
+#pginicial {
+    position: fixed;
+    background-color: white;
+    display: block;
+    height: 78px;
+    width: 764px;
+    text-align: left;
+    border-bottom: gray 1px solid;
+}
+
+#textoini {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+nav {
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 350px;
+    left: -350px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(350px);
+}
+
+.itemmenu {
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+.itemmenu:hover {
+    background-color: rgb(176, 224, 236);
+    color: black;
+}
+
+label {
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
 
 footer {
     height: 10vh;
