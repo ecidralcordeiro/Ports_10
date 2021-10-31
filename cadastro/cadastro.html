@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,42 @@
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <div class="cadastro">
-        <div id="conteudocadastro" class="conteudo-cadastro">
-            <p id="flogin">Cadastro</p>
-            <input onmouseleave=verifica() class="btcadastro" id="email" type="email" placeholder="E-mail">
-            <br>
-            <br>
-            <input class="btcadastro" id="senha1" type="password" placeholder="Senha">
-            <br>
-            <br>
-            <input onmouseleave=verifica() id="senha2" class="btcadastro" type="password" placeholder="Repita a Senha">
-            <br>
-            <br>
-            <button onclick="esconde();" onmouseenter="verifica()" type="button" id="cadastro"> Cadastre-se </button>
-    </div>
-    <div class="divpref" id="pref" onmouseenter="esconde2()">
-        <div class="preferencia">
-            <p id="flogin">Preferência<p>
-            <button type="button" id="cadastro2" onclick="interesses();"> Palestrante </button>
-            <br>
-            <br>
-            <button type="button" id="cadastro2" onclick="interesses();"> Usuário Comum </button>
+    <form class="form">
+        <div class="cadastro">
+            <div>
+                <label for="contactChoice1">Palestrante</label>
+                <input type="radio" id="contactChoice1" name="contact" value="email">
+            </div>
+            <div>
+                <label for="contactChoice2">Aluno</label>
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+            </div>
         </div>
-    </div>
-    
-<script src="cadastro.js"></script>
+        <div class="name">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" />
+        </div>
+        <div class="email">
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" />
+        </div>
+        <div class="password">
+            <label for="password">Senha:</label>
+            <input type="password" id="senha" />
+        </div>
+        <div class="password">
+            <label for="password">Confirmar senha:</label>
+            <input type="password" id="senha" />
+        </div>
+        <div>
+
+        </div>
+        <div class="button">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
 </body>
+
 </html>
