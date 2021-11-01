@@ -70,4 +70,6 @@ function validateButton() {
     document.querySelector("#finish").disabled = true;
   }
 }
-function buttonClick() {}
+function buttonClick() {
+  window.location.href ="../dashboard/dashboard.html"
+}

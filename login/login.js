@@ -23,11 +23,14 @@ function validatePassword() {
     }
   }  
 
-  
   function validateButton() {
     if (passwordValido && emailValido) {
       document.querySelector("#finish").disabled = false;
     } else {
       document.querySelector("#finish").disabled = true;
     }
+  }
+
+function buttonClick() {
+    window.location.href ="../dashboard/dashboard.html"
   }
