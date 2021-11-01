@@ -1,8 +1,9 @@
 let userValido = false;
 let userSelecionado;
 let nomeValido = false;
-let passwordValido = false;
 let emailValido = false;
+let passwordValido = false;
+let termosValido = false;
 
 function validateUserType() {
   console.log(userValido);
@@ -58,6 +59,10 @@ function validatePassword() {
   }
 }
 
+function validateTermos(){
+    termosValido = true
+}
+
 function validateButton() {
   if (nomeValido && passwordValido && userValido && emailValido) {
     document.querySelector("#finish").disabled = false;
@@ -65,5 +70,4 @@ function validateButton() {
     document.querySelector("#finish").disabled = true;
   }
 }
-
 function buttonClick() {}

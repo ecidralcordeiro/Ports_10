@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Ports10</title>
-</head>
-<body>
-    <div class="main-pg">
-        <div class="logoelogin">
-            <div class="logo">
-                <div>
-                    <img src="Ports10 logo.png">
-                </div>
-                <div class="txto-logo">
-                    <h1> Inscreva-se para ficar <br> por dentro de palestras <br> ao redor do mundo</h1>
-                </div>
-            </div>
-            <div class="login">
-                <div class="conteudo-login">
-                    <p id="flogin">Faça login</p>
-                    <input type="email" placeholder="E-mail">
-                    <br>
-                    <br>
-                    <input type="password" placeholder="Senha">
-                    <br>
-                    <br>
-                    <button type="button" id="login"> Login </button>
-                    <div class="cadastro">
-                        <br>
-                        <a href="../cadastro/cadastro.html" style="text-decoration: none;"> Cadastre-se </a>
-                    </div>
-                </div>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="geral">
+      <form class="form">
+        <h2 class="titulo">Login</h2>    
+        <div class="content">
+
+          <label for="mail">E-mail:</label>
+          <br />
+          <input
+            type="email"
+            id="mail"
+            placeholder="E-mail"
+            onchange="validateEmail()"
+          />
+          <br />
+
+          <label for="senha">Senha:</label> <br />
+          <input
+            type="text"
+            id="senha"
+            placeholder="Senha"
+            onchange="validatePassword()"
+          />
         </div>
-        <div class="footer-inicial">
-            <div class="fot-cont">
-                <p id="ports10"> @2021 Ports10 </p>
-                <br>
-                <a href="" style="text-decoration: none;" id="contato"> Contato </a>
-            </div>
+        <div class="button">
+          <button type="button" id="finish" disabled="false" onclick="buttonClick()">
+            Entrar
+          </button>
         </div>
+        <div class="extra">
+            <input
+              type="radio"
+              id="palestranteOption"
+              name="userOption"
+              value="palestrante"
+              onchange="validateUserType()"
+              />
+              <label for="palestranteOption">Não consigo entrar</label>
+              
+              <input
+              type="radio"
+              id="alunoOption"
+              name="userOption"
+              value="aluno"
+              onchange="validateUserType()"
+            />
+            <label for="alunoOption">Esqueci a senha</label>
+          </div>
+      </form>
     </div>
 
-
-</body>
+    <script src="login.js"></script>
+  </body>
 </html>
