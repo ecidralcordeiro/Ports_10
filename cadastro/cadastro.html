@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cadastro.css" />
     <title>Cadastro</title>
-</head>
+  </head>
 
-<body>
-    <form class="form">
+  <body>
+    <div class="geral">
+      <form class="form">
+        <h2 class="titulo">Cadastro de usuário</h2>
         <div class="cadastro">
-            <div>
-                <label for="contactChoice1">Palestrante</label>
-                <input type="radio" id="contactChoice1" name="contact" value="email">
-            </div>
-            <div>
-                <label for="contactChoice2">Aluno</label>
-                <input type="radio" id="contactChoice2" name="contact" value="phone">
-            </div>
+          <input
+            type="radio"
+            id="palestranteOption"
+            name="userOption"
+            value="palestrante"
+            onchange="validateUserType()"
+            />
+            <label for="palestranteOption">Palestrante</label>
+            
+            <input
+            type="radio"
+            id="alunoOption"
+            name="userOption"
+            value="aluno"
+            onchange="validateUserType()"
+          />
+          <label for="alunoOption">Aluno</label>
         </div>
-        <div class="name">
-            <label for="name">Nome Completo:</label>
-            <input type="text" id="name" />
-        </div>
-        <div class="email">
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" />
-        </div>
-        <div class="password">
-            <label for="password">Senha:</label>
-            <input type="password" id="senha" />
-        </div>
-        <div class="password">
-            <label for="password">Confirmar senha:</label>
-            <input type="password" id="senha" />
-        </div>
-        <div>
+        <div class="content">
+          <label for="name">Nome Completo:</label> <br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Nome"
+            onchange="validateName()"
+          />
+          <br />
 
+          <label for="mail">E-mail:</label>
+          <br />
+          <input
+            type="email"
+            id="mail"
+            placeholder="E-mail"
+            onchange="validateEmail()"
+          />
+          <br />
+
+          <label for="senha">Senha:</label> <br />
+          <input
+            type="text"
+            id="senha"
+            placeholder="Senha"
+            onchange="validatePassword()"
+          />
+          <br />
+
+          <label for="confirmarSenha">Confirmar senha:</label> <br />
+          <input
+            type="text"
+            id="confirmarSenha"
+            placeholder="Senha"
+            onchange="validatePassword()"
+          />
         </div>
         <div class="button">
-            <button type="submit">Cadastrar</button>
+          <button type="button" id="finish" disabled="true" onclick="buttonClick()">
+            Cadastrar
+          </button>
         </div>
-    </form>
-</body>
+      </form>
+    </div>
 
+    <script src="cadastro.js"></script>
+  </body>
 </html>
