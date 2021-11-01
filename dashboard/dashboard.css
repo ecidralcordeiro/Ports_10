@@ -221,11 +221,37 @@ ul {
     cursor: pointer;
 }
 
+
+#divminilogo {
+    height: 60px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#btminilogo {
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#btminilogo:hover {
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    background-color: rgb(72, 88, 175);
+    border-radius: 50px;
+    border-color: rgb(104, 125, 245);
+}
+
+#minilogo {
+    height: 60px;
+    border-radius: 50px;
+}
+
 #pginicial {
     position: fixed;
     background-color: white;
     display: block;
-    height: 78px;
+    height: 73px;
     width: 764px;
     text-align: left;
     border-bottom: gray 1px solid;
@@ -242,7 +268,6 @@ input[type='checkbox'] {
 }
 
 nav {
-    background-color: rgba(16,16,16,.5);
     width: 350px;
     height: 350px;
     left: -350px;
@@ -252,13 +277,13 @@ nav {
 }
 
 input[type="checkbox"]:checked ~ nav {
-    transform: translateX(350px);
+    transform: translateX(500px);
 }
 
 .itemmenu {
     display: block;
     padding: 20px 5px;
-    color: white;
+    color: gray;
 }
 
 .itemmenu:hover {
@@ -284,16 +309,17 @@ footer {
     right: 0px;
     bottom: 0px;
 } 
-.loginAndSingin{
+.loginAndSignin{
     position: fixed;
     right: 20px;
+    top: 5px;
 }
-.login, .singIn{
+.login, .signIn{
     top: 20vh;
     border: none;
     padding: 15px 42px;
     border-radius: 15px;
-    color: magenta;
+    color: rgb(104, 125, 245);
     text-align: center;
     text-decoration: none;
     display: inline-block;
