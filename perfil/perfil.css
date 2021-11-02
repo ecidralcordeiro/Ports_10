@@ -18,22 +18,6 @@ header {
     background-color: darkgrey;
 }
 
-.esquerdo {
-    position: fixed;
-    top: 158px;
-    height: 400px;
-    width: 25%;
-    background-color: darkgray;
-}
-
-.direito {
-    position: fixed;
-    top: 158px;
-    right: 0px;
-    height: 400px;
-    width: 25%;
-    background-color: darkgray;
-} 
 
 main {
     height: 90vh;
@@ -51,12 +35,22 @@ main {
     background-color: bisque;
     z-index: 1;
 }
+
+.fotoCapa{
+    height: 14vh;
+    background-color: blueviolet;
+}
+.fotoPerfil{
+    
+    background-color: aqua;
+}
 footer {
     height: 10vh;
     flex-grow: 1;
     background-color: darkgray;
     z-index: 2;
 }
+
 .logo {
     position: fixed;
     right: 0px;

@@ -11,9 +11,8 @@
   <body>
     <div class="geral">
       <form class="form">
-        <h2 class="titulo">Login</h2>    
+        <h2 class="titulo">Login</h2>
         <div class="content">
-
           <label for="mail">E-mail:</label>
           <br />
           <input
@@ -33,29 +32,34 @@
           />
         </div>
         <div class="button">
-          <button type="button" id="finish" disabled="false" onclick="buttonClick()">
+          <button
+            type="button"
+            id="finish"
+            disabled="false"
+            onclick="buttonClick()"
+          >
             Entrar
           </button>
         </div>
         <div class="extra">
-            <input
-              type="radio"
-              id="palestranteOption"
-              name="userOption"
-              value="palestrante"
-              onchange="validateUserType()"
-              />
-              <label for="palestranteOption">Não consigo entrar</label>
-              
-              <input
-              type="radio"
-              id="alunoOption"
-              name="userOption"
-              value="aluno"
-              onchange="validateUserType()"
-            />
-            <label for="alunoOption">Esqueci a senha</label>
-          </div>
+          <input
+            type="radio"
+            id="palestranteOption"
+            name="userOption"
+            value="palestrante"
+            onchange="validateUserType()"
+          />
+          <label for="palestranteOption">Não consigo entrar</label>
+
+          <input
+            type="radio"
+            id="alunoOption"
+            name="userOption"
+            value="aluno"
+            onchange="validateUserType()"
+          />
+          <label for="alunoOption">Esqueci a senha</label>
+        </div>
       </form>
     </div>
 

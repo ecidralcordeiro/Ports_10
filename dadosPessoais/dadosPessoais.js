@@ -1,12 +1,16 @@
 // Validar se é possível clicar no botão de finalizar cadastro
 let userValido = false;
+let nomeValido = false;
 let emailValido = false;
 let passwordValido = false;
 let termoValido = false;
+let cpfValido = false
 
 let userSelecionado;
+let nome;
 let email;
 let senhaDoUsuário;
+let cpfValue;
 
 function validateUserType() {
   const options = document.querySelectorAll('input[name="userOption"]');
@@ -20,6 +24,31 @@ function validateUserType() {
   }
 }
 
+function validateName() {
+  let nameInput = document.querySelector("#name");
+  nome = nameInput.value;
+  if (nome == "" || nome == " " || nome == null || nome == undefined) {
+    nomeValido = false;
+    validateButton();
+    nameInput.style.border = "2px solid #FF0F0F";
+  } else {
+    nomeValido = true;
+    validateButton();
+  }
+}
+
+function validateCpf() {
+  let cpf = document.querySelector("#cpf");
+  if (cpf.value.length < 13) {
+    cpf.value = cpf.value
+    .match(/.{1,3}/g)
+    .join(".")
+    .replace(/\.(?=[^.]*$)/, "-");
+    cpfValue = cpf.value;
+    cpfValido = true
+    validateButton();
+  }
+}
 
 function validateEmail() {
   let emailInput = document.querySelector("#mail");
@@ -56,6 +85,7 @@ function validateTermos() {
 
 function validateButton() {
   if (
+    nomeValido &&
     passwordValido &&
     userValido &&
     emailValido &&
@@ -69,9 +99,10 @@ function validateButton() {
 function buttonClick() {
   let dadosCadastro = {
     userType: userSelecionado,
+    name: nome,
     email: email,
     password: senhaDoUsuário,
   };
   window.localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
-  window.location.href = "../dadosPessoais/dadosPessoais.html";
+  window.location.href = "../perfil/perfil.html";
 }
