@@ -339,6 +339,63 @@ ul {
     margin-left: 160px;
 }
 
+#pubheader {
+    height: 80px;
+    border: 1px solid rgb(211, 202, 202);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 5px;
+}
+
+#pubdescricao {
+    height: 150px;
+    margin: 5px;
+}
+
+#pubtexto {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 120px;
+    font-size: 20px;
+    overflow-x: scroll;
+}
+
+#pubnome {
+font-size: 20px;
+margin-top: 15px;
+margin-left: 15px;
+display: inline-block;
+position: absolute;
+}
+
+#pubperfil {
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 50px;
+    height: 50px;
+}
+
+#pubarroba {
+    position: absolute;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 36px;
+}
+
+#pubcont {
+    height: 336px;
+    border: 1px solid rgb(211, 202, 202);
+    margin: 5px;
+}
+
+.publicacao {
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
 #textoini {
     font-size: 20px;
     font-weight: 300;
