@@ -1,4 +1,3 @@
-// Validar se é possível clicar no botão de finalizar cadastro
 let userValido = false;
 let emailValido = false;
 let passwordValido = false;

@@ -1,16 +1,11 @@
-// nome = localStorage.getItem("name")
-// document.getElementById("#nomedoCorno").innerText(nome)
+// let {name, email} = JSON.parse(localStorage.getItem("dadosPessoais"))
+// console.log(name,email)
+// document.querySelector("#nomedoCorno").innerText = name
 
-let {name, email} = JSON.parse(localStorage.getItem("dadosCadastro"))
-console.log(name,email)
-document.querySelector("#nomedoCorno").innerText = name
-
-// cpf.addEventListener("blur", function(){
-//     let cpf = document.querySelector("#cpf");
-//     let cpfTamanho = cpf.value
-//     if(cpfTamanho.length < 13){
-//         if(cpf.value) cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
-//     }
-   
-// });
+let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
+console.log(dadosPessoais.description)
+document.querySelector("#nomedoCorno").innerText = dadosPessoais.name
+document.querySelector("#cpf").innerText = dadosPessoais.cpf
+document.querySelector("#telefone").innerText = dadosPessoais.number
+document.querySelector("#data").innerText = dadosPessoais.date
 

@@ -33,9 +33,12 @@
           />
           <br />
           <label for="telefone"></label>Telefone:<br>
-          <input type="text"> <br>
+          <input type="text" id="telefone" placeholder="(00)00000-0000" onchange="validateTelephone()"> <br>
 
-          <label for="descricao">Descricao:</label><br>
+          <label for="dataNascimento">Data de nascimento</label> <br>
+          <input type="date" id="data" onchange="validateData()"> <br>
+
+          <label for="descricao" id="descricao" onchange="validateDescription()">Descricao:</label><br>
         <input type="text"><br>
         </div>
         <h3>Preferencias</h3>

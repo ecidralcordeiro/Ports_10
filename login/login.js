@@ -1,8 +1,9 @@
 function validatePassword() {
   let senha = document.querySelector("#senha").value;
   let senhasNãoVazias = senha !== "";
-
+  let senhaUser = localStorage.getItem()
   if (senhasNãoVazias) {
+    if(senha )
     passwordValido = true;
     validateButton();
   } else {

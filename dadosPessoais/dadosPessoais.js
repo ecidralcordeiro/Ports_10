@@ -1,13 +1,14 @@
-// Validar se é possível clicar no botão de finalizar cadastro
 let userValido = false;
 let nomeValido = false;
 let cpfValido = false;
 let telefoneValido = false;
+let dataValida = false;
 
 let userSelecionado;
 let nome;
 let cpf;
 let telefone;
+let dataNascimento;
 let descricao;
 let preferencias;
 
@@ -38,6 +39,31 @@ function validateCpf() {
   }
 }
 
+function validateTelephone() {
+  let telefoneInput = document.querySelector("#telefone");
+  telefone = telefoneInput.value;
+  if(telefone == "" || telefone == " " || telefone == null || telefone == undefined){
+    telefoneValido = false
+    validateButton();
+    nameInput.style.border = "2px solid #FF0F0F";
+  } else{
+    telefoneValido = true
+    validateButton()
+  }
+}
+
+function validateDescription(){
+  let descricaoInput = document.querySelector("#descricao")
+  descricao = descricaoInput.value;
+}
+
+function validateData(){
+  let dataInput = document.querySelector("#data")
+  dataNascimento = dataInput.value
+  console.log(dataNascimento)
+
+}
+
 function validateButton() {
   if (
     nomeValido &&
@@ -50,12 +76,14 @@ function validateButton() {
   }
 }
 function buttonClick() {
-  let dadosCadastro = {
+  let dadosPessoais = {
     name: nome,
     cpf: cpfValue,
     number: telefone,
+    date: dataNascimento,
     description: descricao
   };
-  window.localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
+  window.localStorage.setItem("dadosPessoais", JSON.stringify(dadosPessoais));
   window.location.href = "../perfil/perfil.html";
+
 }
