@@ -11,26 +11,8 @@
   <body>
     <div class="geral">
       <form class="form">
-        <h2 class="titulo">CONTINUAÇÃO</h2>
-         <div class="cadastro">
-          <input
-            type="radio"
-            id="palestranteOption"
-            name="userOption"
-            value="palestrante"
-            onchange="validateUserType()"
-          />
-          <label for="palestranteOption">Palestrante</label>
-
-          <input
-            type="radio"
-            id="alunoOption"
-            name="userOption"
-            value="aluno"
-            onchange="validateUserType()"
-          />
-          <label for="alunoOption">Aluno</label>
-        </div>
+        <h2 class="titulo">Dados Pessoais</h2>
+         
         <div class="content">
          <label for="name">Nome Completo:</label> <br />
           <input
@@ -41,7 +23,7 @@
           />
           <br />
 
-          <label for="cpf">CPF:</label> <br />
+          <label for="cpf">Cpf:</label> <br />
           <input
             type="text"
             id="cpf"
@@ -50,52 +32,43 @@
             onchange="validateCpf()"
           />
           <br />
+          <label for="telefone"></label>Telefone:<br>
+          <input type="text"> <br>
 
-
-          <label for="mail">E-mail:</label>
-          <br />
-          <input
-            type="email"
-            id="mail"
-            placeholder="E-mail"
-            onchange="validateEmail()"
-          />
-          <br />
-
-          <label for="senha">Senha:</label> <br />
-          <input
-            type="password"
-            id="senha"
-            placeholder="Senha"
-            onchange="validatePassword()"
-          />
-          <br />
-
-          <label for="confirmarSenha">Confirmar senha:</label> <br />
-          <input
-            type="password"
-            id="confirmarSenha"
-            placeholder="Senha"
-            onchange="validatePassword()"
-          />
+          <label for="descricao">Descricao:</label><br>
+        <input type="text"><br>
         </div>
-        <div class="termos">
-          <input type="checkbox" id="termos" onchange="validateTermos()" />
-          aceitar <a href="http://google.com.br"> termos de uso</a>
+        <h3>Preferencias</h3>
+
+        <div class="interessesEsquerda"> 
+
+          Culinaria  <input type="checkbox">
+          Esportes         <input type="checkbox"> 
+          Economia         <input type="checkbox">  
+          Produtividade <input type="checkbox">
+            
         </div>
+        <div class="interessesDireita">
+          Ciencia     <input type="checkbox">
+          Medicina         <input type="checkbox"> 
+          Programacao         <input type="checkbox"> 
+          Empreendedori        <input type="checkbox"> 
+        </div>
+
         <div class="button">
           <button
             type="button"
             id="finish"
-            disabled="true"
+            disabled="false"
             onclick="buttonClick()"
           >
-            Cadastrar
+            Finalizar
           </button>
         </div>
+      </div>
       </form>
     </div>
 
-    <script src="dadosPessoais.js"">></script>
+    <script src="dadosPessoais.js""></script>
   </body>
 </html>

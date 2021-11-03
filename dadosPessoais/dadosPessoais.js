@@ -1,28 +1,16 @@
 // Validar se é possível clicar no botão de finalizar cadastro
 let userValido = false;
 let nomeValido = false;
-let emailValido = false;
-let passwordValido = false;
-let termoValido = false;
-let cpfValido = false
+let cpfValido = false;
+let telefoneValido = false;
 
 let userSelecionado;
 let nome;
-let email;
-let senhaDoUsuário;
-let cpfValue;
+let cpf;
+let telefone;
+let descricao;
+let preferencias;
 
-function validateUserType() {
-  const options = document.querySelectorAll('input[name="userOption"]');
-  for (const option of options) {
-    if (option.checked) {
-      userSelecionado = option.value;
-      userValido = true;
-      validateButton();
-      break;
-    }
-  }
-}
 
 function validateName() {
   let nameInput = document.querySelector("#name");
@@ -50,46 +38,11 @@ function validateCpf() {
   }
 }
 
-function validateEmail() {
-  let emailInput = document.querySelector("#mail");
-  email = emailInput.value;
-  if (email == "" || email == " " || email == null || email == undefined) {
-    emailValido = false;
-    document.querySelector("#mail").style.border = "2px solid #FF0F0F";
-    validateButton();
-  } else {
-    emailValido = true;
-    validateButton();
-  }
-}
-
-function validatePassword() {
-  let senha = document.querySelector("#senha").value;
-  let confirmarSenha = document.querySelector("#confirmarSenha").value;
-  let senhasNãoVazias = senha !== "" && confirmarSenha !== "";
-
-  if (senha === confirmarSenha && senhasNãoVazias) {
-    senhaDoUsuário = senha;
-    passwordValido = true;
-    validateButton();
-  } else {
-    passwordValido = false;
-    validateButton();
-  }
-}
-
-function validateTermos() {
-  termoValido = document.querySelector("#termos").checked;
-  validateButton();
-}
-
 function validateButton() {
   if (
     nomeValido &&
-    passwordValido &&
-    userValido &&
-    emailValido &&
-    termoValido
+    cpfValido &&
+    telefoneValido
   ) {
     document.querySelector("#finish").disabled = false;
   } else {
@@ -98,10 +51,10 @@ function validateButton() {
 }
 function buttonClick() {
   let dadosCadastro = {
-    userType: userSelecionado,
     name: nome,
-    email: email,
-    password: senhaDoUsuário,
+    cpf: cpfValue,
+    number: telefone,
+    description: descricao
   };
   window.localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
   window.location.href = "../perfil/perfil.html";
