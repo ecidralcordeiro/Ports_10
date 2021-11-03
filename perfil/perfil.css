@@ -405,7 +405,7 @@ label {
 footer {
     height: 10vh;
     flex-grow: 1;
-    background-color: darkrgb(211, 202, 202);;
+    background-color: rgb(211, 202, 202);
     z-index: 2;
 }
 .logop10 {
