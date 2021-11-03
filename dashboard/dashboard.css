@@ -251,7 +251,7 @@ ul {
     position: fixed;
     background-color: white;
     display: block;
-    height: 78px;
+    height: 73px;
     width: 822px;
     text-align: left;
     border-bottom: rgb(211, 202, 202) 1px solid;
@@ -292,12 +292,12 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 .itemmenu:hover{
-    transition: ease-in 0.1s;
+    transition: 0.2s;
 
     font-size: 25px;
     width: 180px;
     margin: 5px;
-    background-color: rgba(53, 107, 172, 0.534);
+    background-color: rgba(53, 107, 172, 0.103);
     color: black;
 }
 

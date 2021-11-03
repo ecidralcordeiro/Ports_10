@@ -56,7 +56,7 @@ main {
 
     overflow-y: scroll;
     align-self: center;
-    width: 43%;
+    width: 39%;
 
     background-color: white;
     z-index: 1;
@@ -255,11 +255,88 @@ ul {
     background-color: white;
     display: block;
     height: 299px;
-    width: 858px;
-    margin-left: 528px;
+    width: 780px;
+    margin-left: 567px;
     text-align: left;
     border: rgb(211, 202, 202) 1px solid;
     border-top: none;
+}
+
+#fundoperfil {
+    height: 60%;
+    position: relative;
+}
+
+#perfil {
+    height: 40%;
+    position: relative;
+}
+
+#fotofundo {
+    width: 781px;
+    height: 180px;
+}
+
+#status {
+    height: 20px;
+    margin-top: 252px;
+    margin-left: 105px;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 100px;
+    z-index: 1;
+    position: fixed;
+}
+
+#imgperfilconfig {
+    width: 16px;
+}
+
+#editartexto {
+    font-size: 15px;
+    display: inline-block;
+}
+
+#perfilconfig {
+    margin-left: 575px;
+    margin-top: 190px;
+    padding: 15px;
+    color: rgb(53,106,172);
+    text-decoration: none;
+    border: rgb(211, 202, 202) 1px solid;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 1;
+}
+
+#perfilconfig:hover {
+    transition: 0.2s;
+    border-color: rgb(53,106,172);
+    background-color: rgba(53, 107, 172, 0.103);
+}
+
+#fotoperfil {
+    width: 120px;
+    margin-top: 150px;
+    margin-left: 16px;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+#fotoperfil:hover {
+    cursor: pointer;
+}
+
+#nomeusuario{
+    position: relative;
+    margin-left: 160px;
+    margin-top: 15px;
+}
+
+#arrobausuario{
+    position: relative;
+    margin-left: 160px;
 }
 
 #textoini {
@@ -289,7 +366,7 @@ input[type="checkbox"]:checked ~ nav {
 .itemmenu {
     display: block;
     padding: 20px 5px;
-    color: rgb(211, 202, 202);;
+    color: rgb(211, 202, 202);
     width: 160px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -298,12 +375,12 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 .itemmenu:hover{
-    transition: ease-in 0.1s;
+    transition: 0.2s;
 
     font-size: 25px;
     width: 180px;
     margin: 5px;
-    background-color: rgba(53, 107, 172, 0.534);
+    background-color: rgba(53, 107, 172, 0.103);
     color: black;
 }
 
