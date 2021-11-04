@@ -290,11 +290,11 @@ ul {
 }
 
 #pubnome {
-font-size: 20px;
-margin-top: 15px;
-margin-left: 15px;
-display: inline-block;
-position: absolute;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: inline-block;
+        position: absolute;
 }
 
 #pubperfil {
@@ -315,15 +315,32 @@ position: absolute;
     height: 336px;
     border: 1px solid rgb(211, 202, 202);
     margin: 5px;
+    overflow-y: hidden;
 }
 
-#imgfeed {
-    height: 30px;
-    margin-top: 20px;
+input[type='file'] {
+    display: none;
+}
+
+#imgpub {
+    margin-top: 10px;
     margin-left: 10px;
+    height: 45px;
+    position: relative;
 }
 
-#imgfeed:hover {
+#imgpub:hover {
+    cursor: pointer;
+}
+
+#vidpub {
+    margin-top: 9px;
+    margin-left: 10px;
+    height: 50px;
+    position: absolute;
+}
+
+#vidpub:hover {
     cursor: pointer;
 }
 
@@ -332,8 +349,8 @@ position: absolute;
     border: 1px solid rgb(211, 202, 202);
     color: rgb(104, 125, 245);
     border-radius: 20px;
-    margin-left: 20px;
-    margin-top: 16px;
+    margin-left: 70px;
+    margin-top: 14px;
     background-color: transparent;
     position: absolute;
 }
@@ -370,6 +387,43 @@ position: absolute;
     font-size: 20px;
     font-weight: 300;
     padding-top: 30px;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+}
+
+#preview2 {
+    max-height: 50px;
+    position: absolute;
+    z-index: 0;
+    width: auto;
+    height: auto;
+}
+
+#p1 {
+    display: none;
+}
+
+#p2 {
+    display: none;
+}
+
+#p3 {
+    display: none;
+}
+
+#p4 {
+    display: none;
+}
+
+#p5 {
+    display: none;
+}
+
+#p6 {
+    display: none;
 }
 
 input[type='checkbox'] {

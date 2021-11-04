@@ -12,7 +12,7 @@
   <title>Ports10</title>
 </head>
 
-<body>
+<body onload="preview(); preview2(); mostravid()">
   <header>
       <div id="divminilogo">
           <button id="btminilogo"><img id="minilogo" src="/imagens/2-removebg-previeww.png"></button>
@@ -44,12 +44,38 @@
             
         </input>
         <div>
-            <img id="imgfeed" src="/imagens/icons8-pasta-de-imagens-50.png">
-            <button id="publicarfeed">PUBLICAR</button>
+            <img src="/imagens/icons8-pasta-de-imagens-50.png" alt="Selecione uma foto" id="imgpub">
+            <input type="file" id="flimage" name="flimage" accept="image/*" onclick="mudainput2(); habimg()">
+            <img src="/imagens/icons8-vídeo-48.png" id="vidpub">
+            <input type="file" id="flvideo" name="flvideo" accept="video/*" onclick="mudainput(); habvid()">
+            <button id="publicarfeed" onclick="mostrapub(); convertevid()">PUBLICAR</button>
         </div>
     </div>
 
-    <div class="publicacao">
+    <div class="publicacao" id="p1">
+        <div id="pubheader">
+            <img src="/imagens/perfilpreto.jpg" id="pubperfil">
+            <h2 id="pubnome">
+                Nome Usuário
+            </h2>
+            <p id="pubarroba">
+                @arrobausuario
+            </p>
+      </div>
+
+      <div id="pubdescricao">
+        <h2 id="pubtexto">eu sou muito legal</h2>
+      </div>
+
+      <div id="pubcont">
+        <img id="preview" src="">
+        <div id="embed-video">
+            <video id="preview2" src="">
+                <source src="" id="video_here">
+        </div>
+      </div>
+    </div>
+    <div class="publicacao" id="p2">
         <div id="pubheader">
             <img src="/imagens/perfilpreto.jpg" id="pubperfil">
             <h2 id="pubnome">
@@ -68,7 +94,7 @@
         video daora
       </div>
     </div>
-    <div class="publicacao">
+    <div class="publicacao" id="p3">
         <div id="pubheader">
             <img src="/imagens/perfilpreto.jpg" id="pubperfil">
             <h2 id="pubnome">
@@ -87,7 +113,7 @@
         video daora
       </div>
     </div>
-    <div class="publicacao">
+    <div class="publicacao" id="p4">
         <div id="pubheader">
             <img src="/imagens/perfilpreto.jpg" id="pubperfil">
             <h2 id="pubnome">
@@ -106,7 +132,7 @@
         video daora
       </div>
     </div>
-    <div class="publicacao">
+    <div class="publicacao" id="p5">
         <div id="pubheader">
             <img src="/imagens/perfilpreto.jpg" id="pubperfil">
             <h2 id="pubnome">
@@ -125,26 +151,7 @@
         video daora
       </div>
     </div>
-    <div class="publicacao">
-        <div id="pubheader">
-            <img src="/imagens/perfilpreto.jpg" id="pubperfil">
-            <h2 id="pubnome">
-                Nome Usuário
-            </h2>
-            <p id="pubarroba">
-                @arrobausuario
-            </p>
-      </div>
-
-      <div id="pubdescricao">
-        <h2 id="pubtexto">eu sou muito legal</h2>
-      </div>
-
-      <div id="pubcont">
-        video daora
-      </div>
-    </div>
-    <div class="publicacao">
+    <div class="publicacao" id="p6">
         <div id="pubheader">
             <img src="/imagens/perfilpreto.jpg" id="pubperfil">
             <h2 id="pubnome">
