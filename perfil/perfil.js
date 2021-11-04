@@ -8,4 +8,5 @@ document.querySelector("#nomedoCorno").innerText = dadosPessoais.name
 document.querySelector("#cpf").innerText = dadosPessoais.cpf
 document.querySelector("#telefone").innerText = dadosPessoais.number
 document.querySelector("#data").innerText = dadosPessoais.date
+document.querySelector("#descricao").innerText = dadosPessoais.description
 
