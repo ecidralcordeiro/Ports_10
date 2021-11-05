@@ -1,47 +1,76 @@
-function interesses() {
-    window.location.href = "interesses.html";
+let userValido = false;
+let emailValido = false;
+let passwordValido = false;
+let termoValido = false;
+
+let userSelecionado;
+let email;
+let senhaDoUsuário;
+
+function validateUserType() {
+  const options = document.querySelectorAll('input[name="userOption"]');
+  for (const option of options) {
+    if (option.checked) {
+      userSelecionado = option.value;
+      userValido = true;
+      validateButton();
+      break;
+    }
+  }
 }
 
-function esconde() {
-    document.getElementById('conteudocadastro').style.opacity='0';
-    document.getElementById('conteudocadastro').style.transition='opacity 2s';
+
+function validateEmail() {
+  let emailInput = document.querySelector("#mail");
+  email = emailInput.value;
+  if (email == "" || email == " " || email == null || email == undefined) {
+    emailValido = false;
+    document.querySelector("#mail").style.border = "2px solid #FF0F0F";
+    validateButton();
+  } else {
+    emailValido = true;
+    validateButton();
+  }
 }
 
-function verifica() {
-    var email = document.getElementById('email');
-    var senha = document.getElementById('senha1');
-    var senharep = document.getElementById('senha2');
-    var x = document.getElementById('cadastro');
+function validatePassword() {
+  let senha = document.querySelector("#senha").value;
+  let confirmarSenha = document.querySelector("#confirmarSenha").value;
+  let senhasNãoVazias = senha !== "" && confirmarSenha !== "";
 
-    if (email.value == "") {
-        email.style.borderColor = 'rgb(175, 51, 51)';
-        x.disabled = true;
-        x.style.cursor='auto';
-    } else {
-        email.style.borderColor = 'grey';
-        x.disabled = false;
-        x.style.cursor='pointer';
-    }
+  if (senha === confirmarSenha && senhasNãoVazias) {
+    senhaDoUsuário = senha;
+    passwordValido = true;
+    validateButton();
+  } else {
+    passwordValido = false;
+    validateButton();
+  }
+}
 
-    if (senha.value == "" || senha.value < 8) {
-        senha.style.borderColor = 'rgb(175, 51, 51)';
-        x.disabled = true;
-        x.style.cursor='auto';
-    } else {
-        senha.style.borderColor = 'grey';
-        x.disabled = false;
-        x.style.cursor='pointer';
-    }
+function validateTermos() {
+  termoValido = document.querySelector("#termos").checked;
+  validateButton();
+}
 
-    if (senharep.value == "" || senharep.value < 8 || senha.value != senharep.value) {
-        senha.style.borderColor = 'rgb(175, 51, 51)';
-        senharep.style.borderColor = 'rgb(175, 51, 51)';
-        x.disabled = true;
-        x.style.cursor='auto';
-    } else {
-        senha.style.borderColor = 'grey';
-        senharep.style.borderColor = 'grey';
-        x.disabled = false;
-        x.style.cursor='pointer';
-    }
+function validateButton() {
+  if (
+    passwordValido &&
+    userValido &&
+    emailValido &&
+    termoValido
+  ) {
+    document.querySelector("#finish").disabled = false;
+  } else {
+    document.querySelector("#finish").disabled = true;
+  }
+}
+function buttonClick() {
+  let dadosCadastro = {
+    userType: userSelecionado,
+    email: email,
+    password: senhaDoUsuário,
+  };
+  window.localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
+  window.location.href = "../dadosPessoais/dadosPessoais.html";
 }

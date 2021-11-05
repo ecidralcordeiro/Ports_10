@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cadastro.css" />
     <title>Cadastro</title>
-</head>
-<body>
-    <div class="cadastro">
-        <div id="conteudocadastro" class="conteudo-cadastro">
-            <p id="flogin">Cadastro</p>
-            <input onmouseleave=verifica() class="btcadastro" id="email" type="email" placeholder="E-mail">
-            <br>
-            <br>
-            <input class="btcadastro" id="senha1" type="password" placeholder="Senha">
-            <br>
-            <br>
-            <input onmouseleave=verifica() id="senha2" class="btcadastro" type="password" placeholder="Repita a Senha">
-            <br>
-            <br>
-            <button onclick="esconde();" onmouseenter="verifica()" type="button" id="cadastro"> Cadastre-se </button>
-    </div>
-    <div class="divpref" id="pref" onmouseenter="esconde2()">
-        <div class="preferencia">
-            <p id="flogin">Preferência<p>
-            <button type="button" id="cadastro2" onclick="interesses();"> Palestrante </button>
-            <br>
-            <br>
-            <button type="button" id="cadastro2" onclick="interesses();"> Usuário Comum </button>
+  </head>
+
+  <body>
+    <div class="geral">
+      <form class="form">
+        <h2 class="title">Cadastrar Usuário</h2>
+        <div class="cadastro">
+          <input
+            type="radio"
+            id="palestranteOption"
+            name="userOption"
+            value="palestrante"
+            onchange="validateUserType()"
+          />
+          <label for="palestranteOption" class="buttonType">Palestrante</label>
+
+          <input
+            type="radio"
+            id="alunoOption"
+            name="userOption"
+            value="aluno"
+            onchange="validateUserType()"
+          />
+          <label for="alunoOption" class="buttonType">Aluno</label>
         </div>
+        <div class="content">
+          <label for="mail">E-mail:</label>
+          <br />
+          <input
+            type="email"
+            id="mail"
+            class="input"
+            placeholder="E-mail"
+            onchange="validateEmail()"
+          />
+          <br />
+
+          <label for="senha">Senha:</label> <br />
+          <input
+            type="password"
+            id="senha"
+            class="input"
+            placeholder="Senha"
+            onchange="validatePassword()"
+          />
+          <br />
+
+          <label for="confirmarSenha">Confirmar senha:</label> <br />
+          <input
+            type="password"
+            id="confirmarSenha"
+            class="input"
+            placeholder="Senha"
+            onchange="validatePassword()"
+          />
+        </div>
+        <div class="termos">
+          <input type="checkbox" id="termos" onchange="validateTermos()" />
+          aceitar <a href="http://google.com.br" target="_blank"> termos de uso</a>
+        </div>
+        <div class="button">
+          <button
+            type="button"
+            id="finish"
+            class="finish"
+            disabled="true"
+            onclick="buttonClick()"
+          >
+            Proximo
+          </button>
+        </div>
+      </form>
     </div>
-    
-<script src="cadastro.js"></script>
-</body>
+
+    <script src="cadastro.js"></script>
+  </body>
 </html>
