@@ -86,6 +86,18 @@ function readImage() {
     }
 }
 
+function mudaedu() {
+    window.location.href = '/perfil/eduardo.html';
+}
+
+function mudalucca() {
+    window.location.href = '/perfil/lucca.html';
+}
+
+function mudaluca() {
+    window.location.href = '/perfil/luca.html';
+}
+
 document.getElementById("flimage").addEventListener("change", readImage, false);
 
 function mostrapub() {
