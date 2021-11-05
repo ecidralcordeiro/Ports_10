@@ -58,11 +58,8 @@ function mostravid() {
 }
 
 function mudainput() {
-    document.getElementById("vidpub").style.border="2px solid black"
-}
-
-function mudainput2() {
-    document.getElementById("imgpub").style.border="2px solid black"
+    document.getElementById('vidpub').style.backgroundColor="lightgreen";
+    document.getElementById('vidpub').style.borderRadius="20px";
 }
 
 function habimg() {

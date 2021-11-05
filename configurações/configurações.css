@@ -11,6 +11,7 @@ body {
     flex-wrap: nowrap;
     max-height: 100vh;
     font-family: sans-serif;
+
 }
 
 header {
@@ -43,20 +44,18 @@ header {
 } 
 
 main {
-    height: 520px;
+    height: 500px;
     flex-grow: 2;
     border: 1px solid rgb(211, 202, 202);
-    border-top: none;
-    margin-top: 300px;
+    margin-top: 78px;
     margin-left: 430px;
-    margin-right: 434px;
+    margin-right: 204px;
     padding: 16px;
     padding-top: 0px;
     overflow-y: hidden;
 
-    overflow-y: scroll;
     align-self: center;
-    width: 39%;
+    width: 55%;
 
     background-color: white;
     z-index: 1;
@@ -254,89 +253,20 @@ ul {
     position: fixed;
     background-color: white;
     display: block;
-    height: 299px;
-    width: 780px;
-    margin-left: 567px;
+    height: 80px;
+    width: 1088px;
+    margin-left: 528px;
     text-align: left;
     border: rgb(211, 202, 202) 1px solid;
     border-top: none;
+    border-bottom: none;
 }
 
-#fundoperfil {
-    height: 60%;
-    position: relative;
-}
-
-#perfil {
-    height: 40%;
-    position: relative;
-}
-
-#fotofundo {
-    width: 781px;
-    height: 180px;
-}
-
-#status {
-    height: 20px;
-    margin-top: 252px;
-    margin-left: 105px;
-    border: rgb(255, 255, 255) 3px solid;
-    border-radius: 100px;
-    z-index: 1;
-    position: fixed;
-}
-
-#imgperfilconfig {
-    width: 16px;
-}
-
-#editartexto {
-    font-size: 15px;
-    display: inline-block;
-}
-
-#perfilconfig {
-    margin-left: 575px;
-    margin-top: 190px;
-    padding: 15px;
-    color: rgb(53,106,172);
-    text-decoration: none;
-    border: rgb(211, 202, 202) 1px solid;
-    border-radius: 30px;
-    position: fixed;
-    z-index: 1;
-}
-
-#perfilconfig:hover {
-    transition: 0.2s;
-    border-color: rgb(53,106,172);
-    background-color: rgba(53, 107, 172, 0.103);
-}
-
-#fotoperfil {
-    width: 120px;
-    margin-top: 150px;
-    margin-left: 16px;
-    border: rgb(255, 255, 255) 3px solid;
-    border-radius: 100%;
-    z-index: 1;
-    position: fixed;
-}
-
-#fotoperfil:hover {
-    cursor: pointer;
-}
-
-#nomeusuario{
-    position: relative;
-    margin-left: 160px;
-    margin-top: 15px;
-}
-
-#arrobausuario{
-    position: relative;
-    margin-left: 160px;
+#textoini {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-top: 30px;
 }
 
 #pubheader {
@@ -357,9 +287,27 @@ ul {
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 120px;
+    height: 20px;
     font-size: 20px;
-    overflow-x: scroll;
+    display: inline-block;
+    color: rgb(71, 70, 70);
+}
+
+#pubtexto2 {
+    margin-top: 15px;
+    margin-left: 210px;
+    margin-right: 20px;
+    height: 20px;
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(71, 70, 70);
+}
+
+.config {
+    border: 1px solid rgb(211, 202, 202);
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #pubnome {
@@ -368,6 +316,35 @@ margin-top: 15px;
 margin-left: 15px;
 display: inline-block;
 position: absolute;
+}
+
+.btconfig {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(211, 202, 202);
+    color: rgb(104, 125, 245);
+    border-radius: 20px;
+    margin-left: 215px;
+    margin-top: 6px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.btconfig:hover {
+    background-color: rgba(53, 107, 172, 0.103);
+    border-color: rgb(104, 125, 245);
+    cursor: pointer;
+}
+
+.inputconfig {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(211, 202, 202);
+    color: rgb(104, 125, 245);
+    border-radius: 20px;
+    margin-top: 6px;
+    position: absolute;
+    z-index: 1;
 }
 
 #pubperfil {
@@ -384,74 +361,12 @@ position: absolute;
     margin-top: 36px;
 }
 
-#editarp {
-    border: 1px solid rgb(211, 202, 202);
-    display: inline-block;
-    position: fixed;
-    margin-left: 1370px;
-    margin-top: 207px;
-    height: 250px;
-    width: 450px;
-    border-radius: 20px;
-    display: inline-block;
-}
-
-.inputconfig {
-    font-size: 17px;
-    display: inline-block;
-    padding: 4px;
-    width: 143px;
-    color: rgb(104, 125, 245);
-    border-radius: 20px;
-    margin-top: 3px;
-    position: absolute;
-    z-index: 1;
-}
-
-#preview {
-    height: 20px;
-    width: 20px;
-    margin-left: 153px;
-    margin-top: 9px;
-    border: 1px black;
-    position: absolute;
-}
-
-.btconfig {
-    display: inline-block;
-    padding: 6px;
-    border: 1px solid rgb(211, 202, 202);
-    color: rgb(104, 125, 245);
-    border-radius: 20px;
-    margin-left: 180px;
-    margin-top: 6px;
-    background-color: transparent;
-    position: absolute;
-}
-
-#editartxt {
-    margin: 10px;
-    font-size: 17px;
-    display: inline-block;
-}
-
-#pubcont {
-    height: 336px;
-    border: 1px solid rgb(211, 202, 202);
-    margin: 5px;
-}
-
 .publicacao {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
     position: relative;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-#textoini {
-    font-size: 20px;
-    font-weight: 300;
-    padding-top: 30px;
-    padding-left: 15px;
+    border: 1px solid rgb(211, 202, 202);
 }
 
 input[type='checkbox'] {
@@ -474,7 +389,7 @@ input[type="checkbox"]:checked ~ nav {
 .itemmenu {
     display: block;
     padding: 20px 5px;
-    color: rgb(211, 202, 202);
+    color: rgb(211, 202, 202);;
     width: 160px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -513,7 +428,7 @@ label {
 footer {
     height: 10vh;
     flex-grow: 1;
-    background-color: rgb(211, 202, 202);
+    background-color: darkrgb(211, 202, 202);;
     z-index: 2;
 }
 .logop10 {

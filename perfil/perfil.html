@@ -12,7 +12,7 @@
   <title>Ports10</title>
 </head>
 
-<body>
+<body onload="preview()">
   <header>
       <div id="divminilogo">
           <button id="btminilogo"><img id="minilogo" src="/imagens/2-removebg-previeww.png"></button>
@@ -88,10 +88,16 @@
   <div id="pubcont">
     video daora
   </div>
-</div>
-    
   </main>
- </div>
+  <div id="editarp">
+    <div class="opcao">
+      <h2 id="editartxt">Mudar foto de perfil</h2>
+      <input type="file" id="editaimagem" class="inputconfig" alt="">
+      <img src="" id="preview">
+      <button class="btconfig" id="mudaimagem">Confirmar</button>
+    </div>
+  </div>
+  <script src="/perfil/perfil.js"></script>
 </body>
 
 </html>
