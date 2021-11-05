@@ -22,16 +22,16 @@
   <div id="pginicial">
     <img src="/imagens/perfilpreto.jpg" id="fotoperfil">
     <img src="/imagens/verde.jpg" id="status">
-    <a href="" id="perfilconfig">
+    <button href="" id="perfilconfig" onclick="habilita()">
       <img src="/imagens/icons8-editar-30.png" id="imgperfilconfig">
       <h2 id="editartexto">EDITAR PERFIL</h2>
-    </a>
+    </button>
     <div id="fundoperfil">
       <img src="/imagens/perfilpreto.jpg" id="fotofundo">
     </div>
     <div id="perfil">
-      <h2 id="nomeusuario">Nome Usuário</h2>
-      <p id="arrobausuario">@arrobausuario</p>
+      <h2 id="name">Nome Usuário</h2>
+      <p id="arrobaName">@arrobausuario</p>
     </div>
 </div>
 
@@ -51,49 +51,36 @@
   </div>
 
   <main>
-    <div class="publicacao">
-      <div id="pubheader">
-          <img src="/imagens/perfilpreto.jpg" id="pubperfil">
-          <h2 id="pubnome">
-              Nome Usuário
-          </h2>
-          <p id="pubarroba">
-              @arrobausuario
-          </p>
+    <div>
+      <h2 id="descricao">pinto</h2>
     </div>
-
-    <div id="pubdescricao">
-      <h2 id="pubtexto">eu sou muito legal</h2>
-    </div>
-
-    <div id="pubcont">
-      video daora
-    </div>
-  </div>
-  <div class="publicacao">
-    <div id="pubheader">
-        <img src="/imagens/perfilpreto.jpg" id="pubperfil">
-        <h2 id="pubnome">
-            Nome Usuário
-        </h2>
-        <p id="pubarroba">
-            @arrobausuario
-        </p>
-  </div>
-
-  <div id="pubdescricao">
-    <h2 id="pubtexto">eu sou muito legal</h2>
-  </div>
-
-  <div id="pubcont">
-    video daora
-  </div>
   </main>
   <div id="editarp">
     <div class="opcao">
-      <h2 id="editartxt">Mudar foto de perfil</h2>
+      <h2 id="editartxt">Mudar foto de perfil :</h2>
       <input type="file" id="editaimagem" class="inputconfig" alt="">
       <img src="" id="preview">
+      <button class="btconfig" id="mudaimagem">Confirmar</button>
+    </div>
+    <div class="opcao">
+      <h2 id="editartxt">Mudar foto da capa :</h2>
+      <input type="file" id="editaimagem" class="inputconfig" alt="">
+      <img src="" id="preview">
+      <button class="btconfig" id="mudaimagem">Confirmar</button>
+    </div>
+    <div class="opcao">
+      <h2 id="editartxt">Mudar descrição :</h2>
+      <input type="text" id="editaimagem" class="inputconfig" alt="">
+      <button class="btconfig" id="mudaimagem">Confirmar</button>
+    </div>
+    <div class="opcao">
+      <h2 id="editartxt">Mudar CPF :</h2>
+      <input type="text" id="editaimagem" class="inputconfig" alt="">
+      <button class="btconfig" id="mudaimagem">Confirmar</button>
+    </div>
+    <div class="opcao">
+      <h2 id="editartxt">Mudar Data de Ns. :</h2>
+      <input type="date" id="editaimagem" class="inputconfig" alt="">
       <button class="btconfig" id="mudaimagem">Confirmar</button>
     </div>
   </div>

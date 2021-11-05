@@ -43,7 +43,7 @@ header {
 } 
 
 main {
-    height: 520px;
+    height: 300px;
     flex-grow: 2;
     border: 1px solid rgb(211, 202, 202);
     border-top: none;
@@ -54,7 +54,6 @@ main {
     padding-top: 0px;
     overflow-y: hidden;
 
-    overflow-y: scroll;
     align-self: center;
     width: 39%;
 
@@ -291,6 +290,55 @@ ul {
     width: 16px;
 }
 
+#editarp {
+    margin-left: 1370px;
+    margin-top: 200px;
+    width: 450px;
+    height: 300px;
+    position: fixed;
+    border: rgb(211, 202, 202) 1px solid;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.39);
+    display: none;
+}
+
+.opcao {
+    margin: 10px;
+}
+
+#editartxt {
+    font-size: 17px;
+    display: inline-block;
+}
+
+#editaimagem {
+    display: inline-block;
+    width: 115px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#preview {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(211, 202, 202);
+    position: absolute;
+}
+
+.btconfig {
+    padding: 3px;
+    border: 1px solid rgb(211, 202, 202);
+    color: rgb(104, 125, 245);
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.btconfig:hover {
+    cursor: pointer;
+}
+
 #editartexto {
     font-size: 15px;
     display: inline-block;
@@ -312,6 +360,7 @@ ul {
     transition: 0.2s;
     border-color: rgb(53,106,172);
     background-color: rgba(53, 107, 172, 0.103);
+    cursor: pointer;
 }
 
 #fotoperfil {
@@ -328,13 +377,13 @@ ul {
     cursor: pointer;
 }
 
-#nomeusuario{
+#name{
     position: relative;
     margin-left: 160px;
     margin-top: 15px;
 }
 
-#arrobausuario{
+#arrobaName{
     position: relative;
     margin-left: 160px;
 }
@@ -348,9 +397,12 @@ ul {
     margin: 5px;
 }
 
-#pubdescricao {
+#descricao {
     height: 150px;
-    margin: 5px;
+    margin: 10px;
+    width: 100%;
+    overflow-y: scroll;
+    font-size: 20px;
 }
 
 #pubtexto {

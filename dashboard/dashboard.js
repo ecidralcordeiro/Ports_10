@@ -1,3 +1,7 @@
+function verificainteresse() {
+    var storage = localStorage
+}
+
 function preview() {
     'use strict'
 
