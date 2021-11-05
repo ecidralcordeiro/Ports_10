@@ -1,9 +1,10 @@
 * {
     margin: 0;
+    font-family: sans-serif;
   }
   .geral {
     height: 100vh;
-    background-color: rgb(211, 202, 202);
+    background-color: rgb(53, 106, 172);
   
     display: flex;
     align-items: center;
@@ -20,15 +21,26 @@
     height: 60vh;
     width: 35%;
     padding: 2vh;
-    background-color: rgb(104, 125, 245);
+    background-color: rgb(211, 202, 202);
     border: 4px solid black;
     border-radius: 10px;
   }
   
-  #finish{
-    font-size: 18px;
+  .input {
+    margin-bottom: 1vh;
+
+  }
+
+  .finish{
+    font-size: 32px;
+    margin-top: 1.5vh;
   
   }
+
+  .cadastro {
+    margin-bottom: 1vh;
+  }
+
   .cadastro input[type="radio"] {
     opacity: 0;
     position: fixed;

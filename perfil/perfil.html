@@ -12,7 +12,7 @@
   <title>Ports10</title>
 </head>
 
-<body>
+<body onload="preview(); preview2()">
     <header>
         teste
     </header>
@@ -20,17 +20,15 @@
     <main>
         <h1 class="titulo">DADOS PESSOAIS</h1>
         <div class="fotoCapa">
-            <button type="button" id="fotoCapa" >
-                Foto de Capa
-            </button>
+            <input type="file" id="inputCapa" alt="Selecione uma Imagem">
+            <img src="" id="fotoCapa">
         </div>
-
         <div class="fotoPerfil">
-            <button type="button" id="fotoPerfil" >
-              Foto Pefil
-            </button>
-            <p id="nomedoCorno">NomedoCorno</p>
-        </div>
+          <input type="file" id="inputPerfil" alt="Selecione uma Imagem">
+          <img src="" id="fotoPerfil">
+      </div>
+
+        
 
         <label for="cpf" id="cpf">cpf</label> <br>
         <label for="nascimento" id="data">Data de Nascimento</label><br>

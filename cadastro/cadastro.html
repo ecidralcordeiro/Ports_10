@@ -37,6 +37,7 @@
           <input
             type="email"
             id="mail"
+            class="input"
             placeholder="E-mail"
             onchange="validateEmail()"
           />
@@ -46,6 +47,7 @@
           <input
             type="password"
             id="senha"
+            class="input"
             placeholder="Senha"
             onchange="validatePassword()"
           />
@@ -55,18 +57,20 @@
           <input
             type="password"
             id="confirmarSenha"
+            class="input"
             placeholder="Senha"
             onchange="validatePassword()"
           />
         </div>
         <div class="termos">
           <input type="checkbox" id="termos" onchange="validateTermos()" />
-          aceitar <a href="http://google.com.br"> termos de uso</a>
+          aceitar <a href="http://google.com.br" target="_blank"> termos de uso</a>
         </div>
         <div class="button">
           <button
             type="button"
             id="finish"
+            class="finish"
             disabled="true"
             onclick="buttonClick()"
           >
