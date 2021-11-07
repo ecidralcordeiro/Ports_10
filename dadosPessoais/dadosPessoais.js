@@ -10,7 +10,7 @@ let cpf;
 let telefone;
 let dataNascimento;
 let descricao;
-let preferencias;
+let preferencias = [];
 
 
 function validateName() {
@@ -75,15 +75,27 @@ function validateButton() {
     document.querySelector("#finish").disabled = true;
   }
 }
+
+function validadeCheckedPreferences() {
+  const preferences = document.querySelectorAll('input[name="preferenceOption"]');
+  for (const pref of preferences) {
+    if (pref.checked) {
+      preferencias.push(pref.value)
+    }
+  }
+}
+
 function buttonClick() {
+  validadeCheckedPreferences()
   let dadosPessoais = {
     name: nome,
     cpf: cpfValue,
     number: telefone,
     date: dataNascimento,
-    description: descricao
+    description: descricao,
+    preferences: preferencias
   };
+  console.log(dadosPessoais)
   window.localStorage.setItem("dadosPessoais", JSON.stringify(dadosPessoais));
   window.location.href = "../perfil/perfil.html";
-
 }

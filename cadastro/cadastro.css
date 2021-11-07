@@ -14,7 +14,7 @@
 
   .title {
     top: 22vh;
-    position: absolute;
+    /* position: absolute; */
   }
 
   .form {

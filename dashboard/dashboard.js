@@ -1,3 +1,7 @@
+let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
+document.querySelector("#pubarroba").innerText = "@" + dadosPessoais.name
+document.querySelector("#pubnome").innerText = dadosPessoais.name
+
 function verificainteresse() {
     var storage = localStorage
 }
