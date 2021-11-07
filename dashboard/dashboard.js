@@ -3,7 +3,344 @@ document.querySelector("#pubarroba").innerText = "@" + dadosPessoais.name
 document.querySelector("#pubnome").innerText = dadosPessoais.name
 
 function verificainteresse() {
-    var storage = localStorage
+    let storage = JSON.parse(localStorage.getItem("dadosPessoais"));
+    let preferencias = []
+    var i = 0;
+
+
+    for (i in storage) {
+        preferencias.push(storage[i]);
+        i++;
+    }
+
+    if (preferencias[5][0] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][0] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][0] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][0] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][0] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][0] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][0] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][0] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][1] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][1] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][1] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][1] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][1] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][1] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][1] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][1] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][2] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][2] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][2] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][2] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][2] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][2] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][2] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][2] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][3] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][3] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][3] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][3] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][3] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][3] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][3] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][3] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][4] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][4] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][4] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][4] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][4] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][4] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][4] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][4] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][5] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][5] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][5] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][5] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][5] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][5] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][5] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][5] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][6] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][6] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][6] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][6] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][6] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][6] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][6] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][6] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][7] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][7] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][7] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][7] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][7] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][7] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][7] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][7] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][8] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][8] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][8] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][8] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][8] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][8] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][8] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][8] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
+
+
+    if (preferencias[5][9] == "culinaria") {
+        document.getElementById("p2").style.display='block';
+    }
+
+    if (preferencias[5][9] == "esportes") {
+        document.getElementById("p3").style.display='block';
+    }
+
+    if (preferencias[5][9] == "economia") {
+        document.getElementById("p4").style.display='block';
+    }
+
+    if (preferencias[5][9] == "produtividade") {
+        document.getElementById("p5").style.display='block';
+    }
+
+    if (preferencias[5][9] == "ciencia") {
+        document.getElementById("p6").style.display='block';
+    }
+
+    if (preferencias[5][9] == "medicina") {
+        document.getElementById("p7").style.display='block';
+    }
+
+    if (preferencias[5][9] == "programacao") {
+        document.getElementById("p8").style.display='block';
+    }
+
+    if (preferencias[5][9] == "empreendedorismo") {
+        document.getElementById("p9").style.display='block';
+    }
 }
 
 function preview() {
@@ -30,6 +367,7 @@ function preview() {
 
         reader.readAsDataURL(file.files[0]);
     });
+
 }
 
 function preview2() {

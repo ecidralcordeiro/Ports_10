@@ -33,7 +33,4 @@ console.log(dadosPessoais.description)
 document.querySelector("#name").innerText = dadosPessoais.name
 let arrobaname = "@" + dadosPessoais.name
 document.querySelector("#arrobaName").innerText = arrobaname
-document.querySelector("#cpf").innerText = dadosPessoais.cpf
-document.querySelector("#telefone").innerText = dadosPessoais.number
-document.querySelector("#data").innerText = dadosPessoais.date
 document.querySelector("#descricao").innerText = dadosPessoais.description
