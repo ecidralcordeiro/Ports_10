@@ -271,7 +271,7 @@ ul {
     position: relative;
 }
 
-#fotofundo {
+#fotoFundo {
     width: 781px;
     height: 180px;
 }
@@ -363,7 +363,7 @@ ul {
     cursor: pointer;
 }
 
-#fotoperfil {
+#fotoPerfil {
     width: 120px;
     height: 120px;
     margin-top: 150px;
@@ -374,7 +374,7 @@ ul {
     position: fixed;
 }
 
-#fotoperfil:hover {
+#fotoPerfil:hover {
     cursor: pointer;
 }
 

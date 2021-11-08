@@ -1,7 +1,22 @@
+function salvaFoto() {
+    let fotoPerfil = document.querySelector("#fotoPerfil").src;    
+    let fotoCapa = document.querySelector("#fotoCapa").src;
+    
+
+    let fotos = {
+        fotoPerfil: fotoPerfil,
+        fotoCapa : fotoCapa 
+    };
+    window.localStorage.setItem("fotos", JSON.stringify(fotos));
+    var tomanocu = JSON.parse(localStorage.getItem("fotos"))
+    document.querySelector("#fotoPerfil").setAttribute('src', tomanocu.fotoPerfil);
+  }
+
+
 function preview() {
     'use strict'
 
-    let photo = document.getElementById('preview');
+    let photo = document.getElementById('fotoPerfil');
     let file = document.getElementById('editaimagem');
 
     photo.addEventListener('click', () => {
@@ -29,7 +44,6 @@ function habilita() {
 }
 
 let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
-console.log(dadosPessoais.description)
 document.querySelector("#name").innerText = dadosPessoais.name
 let arrobaname = "@" + dadosPessoais.name
 document.querySelector("#arrobaName").innerText = arrobaname
