@@ -37,8 +37,10 @@ function validatePassword() {
   let senha = document.querySelector("#senha").value;
   let confirmarSenha = document.querySelector("#confirmarSenha").value;
   let senhasNãoVazias = senha !== "" && confirmarSenha !== "";
+  let senhaMinima = senha.length;
+  console.log(senhaMinima)
 
-  if (senha === confirmarSenha && senhasNãoVazias) {
+  if (senha === confirmarSenha && senhasNãoVazias && senhaMinima > 7) {
     senhaDoUsuário = senha;
     passwordValido = true;
     validateButton();
@@ -74,3 +76,5 @@ function buttonClick() {
   window.localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
   window.location.href = "../dadosPessoais/dadosPessoais.html";
 }
+
+
