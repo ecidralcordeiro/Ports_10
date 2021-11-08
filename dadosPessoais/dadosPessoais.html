@@ -45,19 +45,76 @@
         </div>
         <h3 class="title">Preferencias</h3>
         
-        <div class="interessesEsquerda"> 
-          
-          Culinaria  <input type="checkbox" value="culinaria" name="preferenceOption">
-          Esportes         <input type="checkbox" value="esportes" name="preferenceOption"> 
-          Economia         <input type="checkbox" value="economia" name="preferenceOption">  
-          Produtividade <input type="checkbox" value="produtividade" name="preferenceOption">
-          
-        </div>
-        <div class="interessesDireita">
-          Ciencia     <input type="checkbox" value="ciencia" name="preferenceOption">
-          Medicina         <input type="checkbox" value="medicina" name="preferenceOption"> 
-          Programacao         <input type="checkbox" value="programacao" name="preferenceOption"> 
-          Empreendedorismo        <input type="checkbox" value="empreendedorismo" name="preferenceOption"> 
+        <div class="interesses">
+          <input
+            type="checkbox"
+            name="preferenceOption"
+            value="culinaria"
+          />
+          <label for="palestranteOption" class="buttonType">Culinaria</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="aluno"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Aluno</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="esportes"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Esportes</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="economia"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Economia</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="produtividade"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Produtividade</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="ciencia"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Ciencia</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="preferenceOption"
+            value="medicina"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Medicina</label>
+
+          <input
+            type="checkbox"
+            id="preferenceOption"
+            name="userOption"
+            value="programacao"
+            onchange="validateUserType()"
+          />
+          <label for="preferenceOption" class="buttonType">Programacao</label>
         </div>
         
         <div class="button">

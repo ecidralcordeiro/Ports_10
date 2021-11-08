@@ -30,7 +30,7 @@ function validateName() {
 
 function validateCpf() {
   let cpf = document.querySelector("#cpf");
-  if (cpf.value.length < 13) {
+  if (cpf.value.length < 13 && cpf.value.length > 10) {
     cpf.value = cpf.value
     .match(/.{1,3}/g)
     .join(".")
@@ -38,6 +38,9 @@ function validateCpf() {
     cpfValue = cpf.value;
     cpfValido = true
     validateButton();
+  }else{
+    cpfValido = false
+
   }
 }
 
@@ -60,9 +63,21 @@ function validateDescription(){
 }
 
 function validateData(){
+  let data = new Date();
+  let ano = data.getFullYear();
+  let mes = data.getMonth();
+  let dia = data.getDate();
+  let dataAtual = ano +"-"+mes +"-"+dia;
   let dataInput = document.querySelector("#data")
   dataNascimento = dataInput.value
-  console.log(dataNascimento)
+  if(dataNascimento > dataAtual){
+    dataValida = false
+    validateButton()
+  }else{
+    dataValida = true
+    validateButton()
+
+  }
 
 }
 
@@ -70,7 +85,8 @@ function validateButton() {
   if (
     nomeValido &&
     cpfValido &&
-    telefoneValido) {
+    telefoneValido &&
+    dataValida) {
     document.querySelector("#finish").disabled = false;
   } else {
     document.querySelector("#finish").disabled = true;

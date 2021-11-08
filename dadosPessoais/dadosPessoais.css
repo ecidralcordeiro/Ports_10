@@ -60,11 +60,10 @@
     border-radius: 4px;
   }
   
-  .cadastro input[type="radio"]:checked + label {
-    background-color: #bfb;
-    border-color: #4c4;
-  }
 
-  .button{
- 
-  }
+  .interesses input[type="checkbox"]:checked + label {
+    background-color: rgb(163, 218, 163);
+    border-color: rgb(35, 114, 35);
+    border: 2px solid #333;
+    border-radius: 5px;
+    }
