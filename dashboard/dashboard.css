@@ -12,6 +12,8 @@ body {
     max-height: 100vh;
     font-family: sans-serif;
     overflow-y: scroll;
+    min-width: 768px;
+    max-width: 1024px;
 }
 
 header {
@@ -51,9 +53,10 @@ main {
     border-bottom: none;
     padding: 16px;
     padding-top: 0px;
+    margin-left: 800px;
 
     align-self: center;
-    width: 43%;
+    width: 75%;
 
     background-color: white;
     z-index: 1;
@@ -253,7 +256,7 @@ ul {
     background-color: white;
     display: block;
     height: 78px;
-    width: 825px;
+    width: 770px;
     text-align: left;
     border-bottom: rgb(211, 202, 202) 1px solid;
 }
@@ -372,7 +375,7 @@ input[type='file'] {
 
 #hfeed {
     height: 60%;
-    width: 808px;
+    width: 740px;
     padding-left: 15px;
     font-size: 20px;
     color: black;
