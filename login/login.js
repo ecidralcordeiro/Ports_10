@@ -5,6 +5,8 @@ function validadeEmail(){
     let emailInput = document.querySelector("#mail").value
     if (emailInput == dadosCadastro.email){
         emailValido = true
+    }else{
+        let emailValido = false
     }
 }
 
@@ -14,6 +16,8 @@ function validadePassword(){
     console.log(senhaInput)
     if (senhaInput == dadosCadastro.password){
         senhaValida = true
+    }else{
+        let senhaValida = false
     }
 }
 
