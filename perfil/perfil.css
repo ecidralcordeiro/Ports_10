@@ -404,6 +404,13 @@ ul {
     margin-left: 160px;
 }
 
+#tipoUsuario{
+    position: relative;
+    margin-left: 160px;
+    margin-top: 16px;
+    color: cadetblue;
+}
+
 #pubheader {
     height: 80px;
     border: 1px solid rgb(211, 202, 202);

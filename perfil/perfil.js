@@ -69,6 +69,8 @@ function habilita() {
 }
 
 let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
+let dadosCadastro = JSON.parse(localStorage.getItem("dadosCadastro"))
+
 let fotos = JSON.parse(localStorage.getItem("fotos"))
 document.querySelector("#name").innerText = dadosPessoais.name
 
@@ -76,5 +78,6 @@ window.localStorage.setItem('fotos', JSON.stringify(fotos))
 let arrobaname = "@" + dadosPessoais.name
 document.querySelector("#arrobaName").innerText = arrobaname
 document.querySelector("#descricao").innerText = dadosPessoais.description
+document.querySelector("#tipoUsuario").innerText = dadosCadastro.userType
 document.querySelector("#fotoPerfil").setAttribute('src', fotos.fotoPerfil)
 document.querySelector("#fotoFundo").setAttribute('src', fotos.fotoCapa)

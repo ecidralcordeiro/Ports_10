@@ -280,17 +280,25 @@ ul {
 }
 
 #pubdescricao {
-    height: 150px;
+    height: 20vh;
     margin: 5px;
 }
 
 #pubtexto {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 120px;
-    font-size: 20px;
-    overflow-x: scroll;
+    margin-top: 1.5vh;
+    margin-bottom: 8vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 24px;
+}
+
+#ativarNotificacoes{
+    padding: 8px;
+    margin-left: 2vh;
+    background-color: rgb(211, 202, 202);
+    font-size: 24px;
+    cursor: pointer;
+
 }
 
 #pubnome {
@@ -316,9 +324,9 @@ position: absolute;
 }
 
 .publicacao {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 250px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    height: 27.5vh;
     position: relative;
     border: 1px solid rgb(211, 202, 202);
 }
