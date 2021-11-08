@@ -69,7 +69,7 @@ function habilita() {
 }
 
 let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
-var fotos = JSON.parse(localStorage.getItem("fotos"))
+let fotos = JSON.parse(localStorage.getItem("fotos"))
 document.querySelector("#name").innerText = dadosPessoais.name
 
 window.localStorage.setItem('fotos', JSON.stringify(fotos))
