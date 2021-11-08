@@ -22,6 +22,8 @@ function validateName() {
     nameInput.style.border = "2px solid #FF0F0F";
   } else {
     nomeValido = true;
+    document.querySelector("#name").style.border = "1px solid #808080"
+
     validateButton();
   }
 }
@@ -68,8 +70,7 @@ function validateButton() {
   if (
     nomeValido &&
     cpfValido &&
-    telefoneValido
-  ) {
+    telefoneValido) {
     document.querySelector("#finish").disabled = false;
   } else {
     document.querySelector("#finish").disabled = true;

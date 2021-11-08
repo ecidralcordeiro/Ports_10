@@ -29,6 +29,7 @@ function validateEmail() {
     validateButton();
   } else {
     emailValido = true;
+    document.querySelector("#mail").style.border = "1px solid #808080"
     validateButton();
   }
 }
@@ -43,9 +44,12 @@ function validatePassword() {
   if (senha === confirmarSenha && senhasNãoVazias && senhaMinima > 7) {
     senhaDoUsuário = senha;
     passwordValido = true;
+    document.querySelector("#senhaInvalida").innerText =""
+
     validateButton();
   } else {
     passwordValido = false;
+    document.querySelector("#senhaInvalida").innerText ="As senhas devem ser iguais"
     validateButton();
   }
 }

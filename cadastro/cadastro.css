@@ -1,6 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .geral {
@@ -14,7 +16,6 @@
 
   .title {
     top: 22vh;
-    /* position: absolute; */
   }
 
   .form {
@@ -23,8 +24,8 @@
     align-items: center;
     justify-content: center; 
 
-    height: 60vh;
-    width: 35%;
+    height: 65vh;
+    width: 32.5%;
     padding: 2vh;
     background-color: rgb(211, 202, 202);
     border: 2px solid black;
@@ -42,7 +43,10 @@
     padding: 1rem;
 
   }
-
+  #senhaInvalida{
+    font-size: 12px;
+    color: red;
+  }
   .finish{
     font-size: 32px;
     margin-top: 1.5vh;
