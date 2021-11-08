@@ -281,6 +281,8 @@ ul {
 #pubdescricao {
     height: 100px;
     margin: 5px;
+    overflow-x: scroll;
+s
 }
 
 #pubtexto {
