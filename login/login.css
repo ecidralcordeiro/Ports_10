@@ -23,7 +23,7 @@
     justify-content: center; 
 
     height: 60vh;
-    width: 35%;
+    width: 30%;
     padding: 2vh;
     background-color: rgb(211, 202, 202);
     border: 2px solid black;
@@ -54,9 +54,6 @@
 
   }
 
-  .cadastro {
-    margin-bottom: 1vh;
-  }
 
   .cadastro input[type="radio"] {
     opacity: 0;
@@ -74,7 +71,4 @@
     border-radius: 4px;
   }
 
-  .cadastro input[type="radio"]:checked + label {
-    background-color: rgb(163, 218, 163);
-    border-color: rgb(35, 114, 35);
-  }
+  
