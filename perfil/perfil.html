@@ -12,7 +12,7 @@
   <title>Ports10</title>
 </head>
 
-<body onload="preview()">
+<body onload="preview(); preview2()">
   <header>
       <div id="divminilogo">
           <button id="btminilogo"><img id="minilogo" src="/imagens/2-removebg-previeww.png"></button>
@@ -64,9 +64,9 @@
     </div>
     <div class="opcao">
       <h2 id="editartxt">Mudar foto da capa :</h2>
-      <input type="file" id="editaimagem" class="inputconfig" alt="">
-      <img src="" id="fotoCapa">
-      <button class="btconfig" id="mudaimagem">Confirmar</button>
+      <input type="file" id="editaimagem2" class="inputconfig" alt="">
+      <img src="" id="fotoDeCapa">
+      <button onclick="salvaFoto()" class="btconfig" id="mudaimagem">Confirmar</button>
     </div>
     <div class="opcao">
       <h2 id="editartxt">Mudar descrição :</h2>

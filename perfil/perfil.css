@@ -317,7 +317,22 @@ ul {
     margin-right: 10px;
 }
 
-#preview {
+#editaimagem2 {
+    display: inline-block;
+    width: 115px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#fotoDePerfil {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(211, 202, 202);
+    position: absolute;
+}
+
+#fotoDeCapa {
     display: inline-block;
     height: 20px;
     width: 20px;

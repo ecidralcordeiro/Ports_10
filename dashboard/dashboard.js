@@ -1,4 +1,5 @@
 let dadosPessoais = JSON.parse(localStorage.getItem("dadosPessoais"))
+var fotos = JSON.parse(localStorage.getItem("fotos"))
 document.querySelector("#pubarroba").innerText = "@" + dadosPessoais.name
 document.querySelector("#pubnome").innerText = dadosPessoais.name
 
@@ -449,6 +450,8 @@ function mostrapub() {
     var desc = document.getElementById("pubtexto");
 
     desc.innerText = pub;
+
+    document.querySelector("#pubperfil1").setAttribute('src', fotos.fotoPerfil)
 }
 
 function recomendados1() {
