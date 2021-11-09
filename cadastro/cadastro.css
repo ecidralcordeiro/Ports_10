@@ -43,6 +43,14 @@
     padding: 1rem;
 
   }
+
+  #possuoconta {
+    font-size: 12px;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
   #senhaInvalida{
     font-size: 12px;
     color: red;
@@ -50,6 +58,8 @@
   .finish{
     font-size: 32px;
     margin-top: 1.5vh;
+    padding: 5px;;
+    border-radius: 5px;
 
   }
 
