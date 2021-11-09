@@ -281,7 +281,6 @@ ul {
     height: 100px;
     margin: 5px;
     overflow-x: scroll;
-s
 }
 
 #pubtexto {
@@ -414,7 +413,7 @@ input[type='file'] {
 }
 
 #preview2 {
-    height: 3;
+    height: 35vh;
     width: 100%;
 }
 
