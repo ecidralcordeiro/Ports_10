@@ -23,13 +23,14 @@ function validateUserType() {
 function validateEmail() {
   let emailInput = document.querySelector("#mail");
   email = emailInput.value;
-  if (email == "" || email == " " || email == null || email == undefined) {
-    emailValido = false;
-    document.querySelector("#mail").style.border = "2px solid #FF0F0F";
-    validateButton();
-  } else {
+  if(email.indexOf('@') > -1 && email.indexOf(".") > -1){
     emailValido = true;
     document.querySelector("#mail").style.border = "1px solid #808080"
+    validateButton();
+    console.log("tem @")
+  }else{
+    emailValido = false;
+    document.querySelector("#mail").style.border = "2px solid #FF0F0F";
     validateButton();
   }
 }
