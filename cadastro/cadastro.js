@@ -55,6 +55,24 @@ function validatePassword() {
   }
 }
 
+function viewSenha(){
+  let tipo = document.getElementById("senha")
+  if (tipo.type == "password") {
+    tipo.type = "text";
+  }else{
+    tipo.type = "password";
+  }
+}
+
+function viewSenha2(){
+  let tipo = document.getElementById("confirmarSenha")
+  if (tipo.type == "password") {
+    tipo.type = "text";
+  }else{
+    tipo.type = "password";
+  }
+}
+
 function validateTermos() {
   termoValido = document.querySelector("#termos").checked;
   validateButton();

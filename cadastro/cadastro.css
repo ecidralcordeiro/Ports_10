@@ -55,6 +55,11 @@
     font-size: 12px;
     color: red;
   }
+
+  .olho {
+    cursor: pointer;
+    width: 20px;
+  }
   .finish{
     margin-top: 2vh;
     margin-bottom: 2vh;

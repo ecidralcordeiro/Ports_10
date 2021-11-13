@@ -51,17 +51,27 @@
             placeholder="Senha"
             onchange="validatePassword()"
           />
-          <br />
+          <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho" onclick="viewSenha()">
 
-          <label for="confirmarSenha">Confirmar senha:</label> <br />
-          <input
-            type="password"
-            id="confirmarSenha"
-            class="input"
-            placeholder="Senha"
-            onchange="validatePassword()"
-          />
+          <br />
+          
+            <label for="confirmarSenha">Confirmar senha:</label> <br />
+            <input
+              type="password"
+              id="confirmarSenha"
+              class="input"
+              placeholder="Senha"
+              onchange="validatePassword()"
+              />
+              <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho" onclick="viewSenha2()">
+
+            
+
+          
         </div>
+
+        <p id="senhaInvalida"></p>
+
         <div class="termos">
           <input type="checkbox" id="termos" onchange="validateTermos()" />
           aceitar <a href="http://google.com.br" target="_blank"> termos de uso</a>
