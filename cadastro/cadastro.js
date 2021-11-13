@@ -60,6 +60,11 @@ function validateTermos() {
   validateButton();
 }
 
+function loginClick() {
+  window.location.href = "../login/login.html";
+
+}
+
 function validateButton() {
   if (
     passwordValido &&
@@ -68,8 +73,10 @@ function validateButton() {
     termoValido
   ) {
     document.querySelector("#finish").disabled = false;
+    document.querySelector(".finish").setAttribute('style','cursor: pointer')
   } else {
     document.querySelector("#finish").disabled = true;
+    document.querySelector(".finish").setAttribute('style','cursor: default')
   }
 }
 function buttonClick() {

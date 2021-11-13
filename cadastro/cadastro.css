@@ -48,19 +48,28 @@
     color: red;
   }
   .finish{
-    font-size: 32px;
-    margin-top: 1.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #ddd;
+    padding: 5px 10px;
+    font-size: 24px;
+    border: 2px solid #444;
+    border-radius: 4px;
 
   }
 
-  .finish1{
+ 
+  .buttonLogin{
     font-size: 8px;
-    margin-top: 1.5vh;
+  }
 
+  .loginButton:hover{
+    cursor: pointer;
   }
 
 
   .cadastro {
+    margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
@@ -74,7 +83,6 @@
     display: inline-block;
     background-color: #ddd;
     padding: 10px 20px;
-    font-family: sans-serif, Arial;
     font-size: 16px;
     border: 2px solid #444;
     border-radius: 4px;
