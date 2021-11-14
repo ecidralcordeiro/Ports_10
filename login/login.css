@@ -13,7 +13,7 @@
   }
 
   .title {
-    top: 22vh;
+    margin-bottom: 29px;
   }
 
   .form {
@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center; 
 
+    
     height: 60vh;
     width: 30%;
     padding: 2vh;
@@ -43,16 +44,31 @@
   }
 
   .logar{
-    font-size: 24px;
-    margin-top: 1.5vh;
-    cursor: pointer;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      background-color: #ddd;
+      padding: 5px 40px;
+      font-size: 24px;
+      border: 2px solid #444;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-  }
+  
   .finish1{
-    font-size: 8px;
-    margin-top: 1.5vh;
-
+    font-size: 12px;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
   }
+
+  #cadastro{
+    font-size: 12px;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
 
 
   .cadastro input[type="radio"] {
